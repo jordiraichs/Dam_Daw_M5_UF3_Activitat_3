@@ -1,0 +1,42 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>80</x><y>0</y><w>390</w><h>280</h></coordinates><panel_attributes>transparency=90
+bg=green
+Automobil
+--
+# marca: String
+# model: String
+# matricula: String
+__+ totalAuto: int__
+--
++ Automobil(in marca: String, in model:String, in matricula:String)
++ Automobil()
++ printAutomobi(): String
++ mostrarDades(): String
++ getMarca(): String
++ getModel(): String
++ getMatricula(): String
++ setMarca(in marca:String):void
++ setModel(in model:String):void
++ setMatricula(in matricula:String):void
+# consumBenzina(in litresX100: Float): Float
+__+ matriculaCorrecta(in matricula:String): bool __
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>310</y><w>490</w><h>120</h></coordinates><panel_attributes>transparency=90
+bg=red
+Coche
+--
+- combustible: String
+--
++ Coche()
++ Coche(in marca: String, in model: String, in matricula: String, in combustible: String)
++ consumBenzina(in litresX100: Float): Float
++ mostrarCoche(): String
++ mostrarDades(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>270</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>440</y><w>490</w><h>120</h></coordinates><panel_attributes>transparency=90
+bg=red
+Camio
+--
+- combustible: String
+--
++ Camio()
++ Camio(in marca: String, in model: String, in matricula: String, in combustible: String)
++ consumBenzina(in litresX100: Float): Float
++ mostrarCamio(): String
++ mostrarDades(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>270</y><w>260</w><h>190</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;240;170</additional_attributes></element></diagram>
